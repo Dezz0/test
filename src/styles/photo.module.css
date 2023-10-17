@@ -1,0 +1,57 @@
+.center {
+    display: grid;
+    grid-auto-rows: minmax(40px, auto);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.filter_btn {
+    grid-column: 1/4;
+    align-self: center;
+    justify-self: end;
+}
+
+.filter_input {
+    display: none;
+}
+
+.filter_label {
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #292c35;
+    color: #fcd9b8;
+    transition: 0.3s;
+}
+
+.filter_input:checked + .filter_label {
+    background-color: #ff5733;
+    color: #fdfdfd;
+}
+
+.card {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+.like_btn {
+    cursor: pointer;
+    position: absolute;
+    background: none;
+}
+.delete_btn {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+
+.photo {
+    margin-bottom: 10px;
+}
